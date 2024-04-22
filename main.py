@@ -2,7 +2,6 @@ import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
-def main():
     st.title("Python Code Generation App")
 
     # Load the model and tokenizer
@@ -29,5 +28,4 @@ def main():
             st.subheader("Generated Code:")
             st.code(generated_text)
 
-if __name__ == "__main__":
-    main()
+
