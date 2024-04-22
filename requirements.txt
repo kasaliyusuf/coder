@@ -1,5 +1,4 @@
 transformers==4.14.0
 streamlit==1.4.0
-pip install tokenizers --no-build-isolation
 
 # Add other dependencies as needed
