@@ -8,7 +8,7 @@ def main():
     # Load the model and tokenizer
     tokenizer = AutoTokenizer.from_pretrained("Salesforce/codet5p-770m")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = AutoModelForSeq2SeqLM.from_pretrained("Salesforce/codet5p-220m").to(device)
+    model = AutoModelForSeq2SeqLM.from_pretrained("Salesforce/codet5p-770m").to(device)
 
     # Get user input
     # Print version of Streamlit
