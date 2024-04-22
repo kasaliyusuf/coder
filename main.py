@@ -7,7 +7,7 @@ def main():
 
     # Load the model and tokenizer
     tokenizer = AutoTokenizer.from_pretrained("Salesforce/codet5p-770m-py")
-    device = torch.device('cpu')
+    device = 'cpu'
     model = AutoModelForSeq2SeqLM.from_pretrained("Salesforce/codet5p-770m-py").to(device)
 
     # Get user input
