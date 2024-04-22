@@ -1,6 +1,6 @@
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-#import torch
+import torch
 
 def main():
     st.title("Python Code Generation App")
