@@ -6,7 +6,7 @@ def main():
     st.title("Python Code Generation App")
 
     # Load the model and tokenizer
-    tokenizer = AutoTokenizer.from_pretrained("Salesforce/codet5p-220m")
+    tokenizer = AutoTokenizer.from_pretrained("Salesforce/codet5p-770m")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = AutoModelForSeq2SeqLM.from_pretrained("Salesforce/codet5p-220m").to(device)
 
