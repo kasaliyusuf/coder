@@ -6,9 +6,9 @@ def main():
     st.title("Python Code Generation App")
 
     # Load the model and tokenizer
-    tokenizer = AutoTokenizer.from_pretrained("C:/Users/PC/Documents/L4/Project/LLM Project/codergen/codet5p-220m-py")
+    tokenizer = AutoTokenizer.from_pretrained("Salesforce/codet5p-770m-py")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = AutoModelForSeq2SeqLM.from_pretrained("C:/Users/PC/Documents/L4/Project/LLM Project/codergen/codet5p-220m-py").to(device)
+    model = AutoModelForSeq2SeqLM.from_pretrained("Salesforce/codet5p-770m-py").to(device)
 
     # Get user input
     st.subheader("Instructions")
