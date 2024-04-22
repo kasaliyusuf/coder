@@ -1,5 +1,5 @@
 import streamlit as st
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+#from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
 def main():
